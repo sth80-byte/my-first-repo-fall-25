@@ -12,7 +12,7 @@ while True:
         print("Oops! Invalid choice. Please try again with rock, paper, or scissors.")
         print("_______________________")
 
-print(f"{PLAYER_NAME} chose {user_choice}.")
+print(f"You chose {user_choice}.")
 print("_____________________")
 
 #computer chooses randomly
