@@ -20,7 +20,7 @@ computer_choice=random.choice(valid_choices)
 print(f"The computer chose {computer_choice}.")
 print("_____________________")
 
-#determine winner
+#Determine the winner
 if user_choice==computer_choice:
     print("It's a tie!")
 elif user_choice=="rock" and computer_choice=="scissors":

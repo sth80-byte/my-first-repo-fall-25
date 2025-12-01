@@ -4,7 +4,7 @@
 
 Clone the repo to download it from GitHub. Perhaps onto the Desktop.
 
-Navigate to the repo using the command line. Perhaps onto Desktop.
+Navigate to the repo using the command line. Perhaps onto the Desktop folder.
 
 ```sh
 cd ~/Desktop/local_repository/my-first-repo-fall-25
