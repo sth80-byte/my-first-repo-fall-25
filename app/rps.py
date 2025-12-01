@@ -21,15 +21,23 @@ print(f"The computer chose {computer_choice}.")
 print("_____________________")
 
 #Determine the winner
-if user_choice==computer_choice:
-    print("It's a tie!")
-elif user_choice=="rock" and computer_choice=="scissors":
-    print("You win! Thanks for playing")
-elif user_choice=="paper" and computer_choice=="rock":
-    print("You win! Thanks for playing")
-elif user_choice=="scissors" and computer_choice=="paper":
-    print("You win! Thanks for playing")
-else:
-    print("You lose! Better luck next time!")
-print("___________________")
-print("Goodbye and thanks for playing!")
+
+#quick alias
+u = user_choice
+c = computer_choice
+
+def determine_winner(user_choice, computer_choice):
+    if u == c:
+        return "It's a tie!"
+    elif u =="rock" and c =="scissors":
+        return "You win! Thanks for playing"
+    elif u =="paper" and c =="rock":
+        return "You win! Thanks for playing"
+    elif u =="scissors" and c =="paper":
+        return "You win! Thanks for playing"
+    else:
+        return "You lose! Better luck next time!"
+
+result = determine_winner(user_choice, computer_choice)
+print(result)
+# assert determine_winner('rock', 'rock') == "It's a tie!"
