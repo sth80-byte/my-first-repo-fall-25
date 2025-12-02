@@ -36,8 +36,8 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       env:
-      # set environment varibales to use during testing
-      # ... using the reposiroty secret values set securely via repo settings
-      ALPHAVANTAGE_API_KEY: ${{ secrets.ALPHAVANTAGE_API_KEY }}
-      run: |
+        # set environment variables to use during testing
+        # ... using the repository secret values set securely via repo settings
+        ALPHAVANTAGE_API_KEY: ${{ secrets.ALPHAVANTAGE_API_KEY }}
         pytest
+        
