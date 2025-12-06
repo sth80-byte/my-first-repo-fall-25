@@ -3,6 +3,9 @@ import random
 #valid options
 valid_choices=["rock", "paper", "scissors"]
 
+def generate_random_choice():
+    return random.choice(valid_choices)
+
 def determine_winner(u, c):
     if u == c:
         return "It's a tie!"
@@ -36,7 +39,8 @@ if __name__ == "__main__":
     print("_____________________")
 
     #computer chooses randomly
-    computer_choice=random.choice(valid_choices)
+    #computer_choice=random.choice(valid_choices)
+    computer_choice = generate_random_choice()
     print(f"The computer chose {computer_choice}.")
     print("_____________________")
 
