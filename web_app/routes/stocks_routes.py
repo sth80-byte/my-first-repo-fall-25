@@ -49,7 +49,7 @@ def stocks_dashboard():
 #
 # API ROUTES
 #
-
+# /api/stocks.json?symbol=SPOT
 @stocks_routes.route("/api/stocks.json")
 def stocks_api():
     print("STOCKS DATA (API)...")
