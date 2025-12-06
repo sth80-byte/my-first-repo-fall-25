@@ -49,6 +49,25 @@ Stocks Dashboard
 ```sh
 python -m app.stocks
 ```
+## Web App
+### Web App
+
+Run the web app (then view in the browser at http://localhost:5000/):
+
+```sh
+# if we have the FLASK_APP=web_app env var in the ".env" file:
+flask run
+
+# Mac OS:
+FLASK_APP=web_app flask run
+
+# Windows OS:
+# ... if `export` doesn't work for you, try `set` instead
+# ... or set FLASK_APP variable via ".env" file
+export FLASK_APP=web_app
+flask run
+```
+
 ## Configuration
 
 The stocks functionality requires an AlphaVantage API key
@@ -60,6 +79,9 @@ create a local ".env" file and store your environment variable in there
 # this is the ".env" file...
 
 ALPHAVANTAGE_API_KEY="_________"
+
+# also tell flask where our web app is defined
+FLASK_APP=web_app
 ```
 
 ## Testing
